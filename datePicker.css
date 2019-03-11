@@ -1,0 +1,72 @@
+
+.wrapper{
+	margin: 20px auto;
+	max-width: 300px;
+	border: 1px solid gray;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(http://icons.iconarchive.com/icons/youthedesigner/new-year/24/calendar-icon.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.showDate{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid gray;
+	padding: 5px;
+	align-items: center;
+}
+
+.select{
+	padding: 5px;
+	max-width: 290px;
+}
+
+#selection{
+	width: 100%;
+}
+
+.calendar{
+	display: flex;
+    padding: 5px;
+	max-width: 290px;
+	justify-content: space-between;
+}
+
+.calendar>div{
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+}
+
+input, select{
+	border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+
+.button{
+	display: flex;
+	justify-content: space-between;
+	margin:15px 5px 5px;
+}
+
+button{
+	width: 60px;
+	height: 30px;
+	cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button button:last-child{
+	background-color: red;
+	color:white;
+	border:none;
+}

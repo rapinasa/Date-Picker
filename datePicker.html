@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-type">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Date Picker</title>
+		<link type="text/css" rel="stylesheet" href="datePicker.css"/>
+  </head>
+  <body>
+  <div class="wrapper">
+     <div class='showDate'>
+         <div>
+	     <span id='choosenDateFrom'></span>
+	     <span id='choosenDateTo'></span>
+	     </div>
+         <img src='http://icons.iconarchive.com/icons/youthedesigner/new-year/24/calendar-icon.png'>
+     </div>
+     <div class='select'>
+	     <select id="selection" onchange="chooseDate()">
+		     <option value='value1'>Today</option>
+		     <option value='value2'>Yesterday</option>
+		     <option value='value3'>Last 7 days</option>
+		     <option value='value4'>Last 30 days</option>
+		     <option value='value5'>Last 90 days</option>
+	     </select>
+     </div>
+     <div class='calendar'>
+          <div>
+          <span>From</span>
+	      <input id='mainDateFrom' type="date" value='2019-03-11'>
+	      </div>
+	      <div>
+	      <span>To</span>
+	      <input id='mainDateTo' type="date" value='2019-03-11'>
+	      <div class='button'>
+	     <button onclick='remove()'> Clear </button>
+	     <button onclick='apply()'> Apply </button>
+     </div>
+	      </div>
+     </div>
+     
+  </div>
+
+     <script type="text/javascript" src="datePicker.js"></script>
+  </body>
+</html>
